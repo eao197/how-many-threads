@@ -27,7 +27,7 @@ class threads_joiner_t {
 	thread_info_container_t & cont_;
 
 public:
-	threads_joiner_t(thread_info_container_t & cont) : cont_{cont} {}
+	threads_joiner_t(thread_info_container_t & cont) : cont_(cont) {}
 	~threads_joiner_t() {
 		std::cout << "--- start joining threads (" << cont_.size()
 				<< ") ---" << std::endl;
